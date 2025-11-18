@@ -20,7 +20,7 @@ export default function ContentSection() {
                         <p className="text-muted-foreground">
                             Generic prompt tools optimize without context, producing one-size-fits-all prompts. <span className="text-accent-foreground font-bold">Prompt Intent takes a different approach</span>—it asks clarifying questions to understand your specific intent before generating your prompt.
                         </p>
-                        <p className="text-muted-foreground">By answering a few targeted questions, you guide the optimization. No more generic rewrites that miss the mark—just prompts built around what you truly want.</p>
+                        <p className="text-muted-foreground">By answering targeted questions, you guide the optimization. No more generic rewrites that miss the mark—just prompts built around what you truly want.</p>
                     </div>
                 </div>
             </div>

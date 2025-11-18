@@ -36,7 +36,7 @@ export default function HeroSection() {
                                 speedSegment={0.3}
                                 as="h1"
                                 className="text-balance text-5xl font-medium md:text-6xl">
-                                Transform Ideas Into Precise Prompts Through Intent Based Questions
+                                Generate, Refine, and Perfect Your Prompts Through Iterative Optimization
                             </TextEffect>
                             <TextEffect
                                 per="line"
@@ -45,7 +45,7 @@ export default function HeroSection() {
                                 delay={0.5}
                                 as="p"
                                 className="mx-auto mt-6 max-w-2xl text-pretty text-lg">
-                                A Privacy-first Chrome extension that generates precise prompts for LLMs by asking intelligent intent based questions. Works completely offline. Unlimited refinements.
+                                A Privacy-first Chrome extension that generates and optimizes prompts for LLMs via intelligent intent-based questions. Each iteration captures more of your intent, progressively refining your prompt until it's perfectly aligned with your goals—all working completely offline, on your device.
                             </TextEffect>
 
                             <AnimatedGroup
