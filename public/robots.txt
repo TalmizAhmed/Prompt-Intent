@@ -2,5 +2,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://promptintent.com/sitemap.xml
+Sitemap: https://prompt-intent.talmiz.com/sitemap.xml
 

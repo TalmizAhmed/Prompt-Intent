@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import { TextEffect } from '@/components/ui/text-effect'
 import { AnimatedGroup } from '@/components/ui/animated-group'
 import { motion } from 'motion/react'
+import { Logo } from '@/components/logo'
 
 
 const transitionVariants = {
@@ -32,14 +33,14 @@ export default function HeroSection() {
                 <section id="hero">
                     <div className="relative mx-auto max-w-6xl px-6 pb-20 pt-32 lg:pt-48">
                         <div className="relative z-10 mx-auto max-w-5xl text-center">
-                            <motion.img 
-                                src="/src/assets/logo.svg" 
-                                alt="Logo" 
-                                className="mx-auto mb-8 w-24 h-24"
+                            <motion.div
+                                className="mx-auto mb-8 w-24 h-24 flex items-center justify-center"
                                 initial={{ opacity: 0, filter: 'blur(12px)', y: 12 }}
                                 animate={{ opacity: 1, filter: 'blur(0px)', y: 0 }}
                                 transition={{ type: 'spring', bounce: 0.3, duration: 1.5 }}
-                            />
+                            >
+                                <Logo className="w-full h-full" />
+                            </motion.div>
                             <TextEffect
                                 preset="fade-in-blur"
                                 speedSegment={0.3}
@@ -54,7 +55,7 @@ export default function HeroSection() {
                                 delay={0.5}
                                 as="p"
                                 className="mx-auto mt-6 max-w-2xl text-pretty text-lg">
-                                A Privacy-first Chrome extension that generates and optimizes prompts for LLMs via intelligent intent-based questions. Each iteration captures more of your intent, progressively refining your prompt until it's perfectly aligned with your goals—all working completely offline, on your device.
+                                Prompt Intent is a Privacy-first Chrome extension that generates and optimizes prompts for LLMs via intelligent intent-based questions. Each iteration captures more of your intent, progressively refining your prompt until it's perfectly aligned with your goals—all working completely offline, on your device.
                             </TextEffect>
 
                             <AnimatedGroup
