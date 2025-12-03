@@ -9,6 +9,10 @@ const links = [
         title: 'Features',
         href: '#features',
     },
+    {
+        title: 'Getting Started',
+        href: '#how-it-works',
+    },
 ]
 
 export default function FooterSection() {
@@ -30,7 +34,6 @@ export default function FooterSection() {
                     ))}
                 </div>
                 <div className="my-4 flex flex-wrap justify-center gap-6 text-sm">
-                    {/* TODO: Update with actual GitHub repository URL */}
                     <a
                         href="https://github.com/talmizahmed/"
                         target="_blank"
@@ -68,7 +71,7 @@ export default function FooterSection() {
                 </div>
                 <div className="text-center space-y-2">
                     <p className="text-muted-foreground text-sm">
-                        Made by Talmiz Ahmed
+                        Made with <span className="text-xs">❤️</span> by Talmiz Ahmed
                     </p>
                 </div>
             </div>

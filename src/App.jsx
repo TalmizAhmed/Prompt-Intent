@@ -3,6 +3,7 @@ import HeroSection from '@/components/hero-section'
 import Features from '@/components/features'
 import FooterSection from '@/components/footer'
 import ContentSection from '@/components/content'
+import GettingStarted from '@/components/getting-started'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <HeroSection />
       <ContentSection />
       <Features />
+      <GettingStarted />
       <FooterSection />
     </>
   )

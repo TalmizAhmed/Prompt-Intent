@@ -7,6 +7,7 @@ import { Logo } from '@/components/logo'
 const menuItems = [
     { name: 'About', href: '#content' },
     { name: 'Features', href: '#features' },
+    { name: 'Getting Started', href: '#how-it-works' },
 ]
 
 export const HeroHeader = () => {
