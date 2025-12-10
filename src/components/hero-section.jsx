@@ -46,17 +46,26 @@ export default function HeroSection() {
                                 speedSegment={0.3}
                                 as="h1"
                                 className="text-balance text-5xl font-medium md:text-6xl">
-                                Generate, Refine, and Perfect Your Prompts Through Iterative Optimization
+                                Perfect Your Prompts Through Iterative Optimization
                             </TextEffect>
-                            <TextEffect
-                                per="line"
-                                preset="fade-in-blur"
-                                speedSegment={0.3}
-                                delay={0.5}
-                                as="p"
-                                className="mx-auto mt-6 max-w-2xl text-pretty text-lg">
-                                Prompt Intent is a Privacy-first Chrome extension that generates and optimizes prompts for LLMs via intelligent intent-based questions. Each iteration captures more of your intent, progressively refining your prompt until it's perfectly aligned with your goals—all working completely offline, on your device.
-                            </TextEffect>
+                            <div className="mx-auto mt-6 max-w-2xl text-pretty text-lg space-y-4">
+                                <TextEffect
+                                    per="line"
+                                    preset="fade-in-blur"
+                                    speedSegment={0.3}
+                                    delay={0.5}
+                                    as="p">
+                                    Prompt Intent is a privacy-first Chrome extension that reveals and closes the blindspots in your prompts.
+                                </TextEffect>
+                                <TextEffect
+                                    per="line"
+                                    preset="fade-in-blur"
+                                    speedSegment={0.3}
+                                    delay={0.7}
+                                    as="p">
+                                    Through intelligent AI powered questions, it uncovers missing details and context you didn't realize were needed, iteratively refining your prompt until it perfectly captures your intent - helping you get the best results.
+                                </TextEffect>
+                            </div>
 
                             <AnimatedGroup
                                 variants={{
@@ -91,41 +100,25 @@ export default function HeroSection() {
                                     Powered by Chrome's On-Device LLM
                                 </p>
 
-                                <div
-                                    aria-hidden
-                                    className="bg-radial from-primary/50 dark:from-primary/25 relative mx-auto mt-32 max-w-2xl to-transparent to-55% text-left">
-                                    <div
-                                        className="bg-background border-border/50 absolute inset-0 mx-auto w-80 -translate-x-3 -translate-y-12 rounded-[2rem] border p-2 [mask-image:linear-gradient(to_bottom,#000_50%,transparent_90%)] sm:-translate-x-6">
-                                        <div
-                                            className="relative h-96 overflow-hidden rounded-[1.5rem] border p-2 pb-12 before:absolute before:inset-0 before:bg-[repeating-linear-gradient(-45deg,var(--color-border),var(--color-border)_1px,transparent_1px,transparent_6px)] before:opacity-50"></div>
+                                <div className="mx-auto mt-16 max-w-4xl">
+                                    <div className="relative rounded-2xl border border-border/50 bg-background p-2 shadow-2xl dark:bg-white/5">
+                                        <video 
+                                            className="w-full h-auto rounded-xl"
+                                            autoPlay 
+                                            loop 
+                                            muted 
+                                            playsInline
+                                            controls
+                                        >
+                                            <source src="/PromptIntent.mp4" type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
                                     </div>
-                                    <div
-                                        className="bg-muted dark:bg-background/50 border-border/50 mx-auto w-80 translate-x-4 rounded-[2rem] border p-2 backdrop-blur-3xl [mask-image:linear-gradient(to_bottom,#000_50%,transparent_90%)] sm:translate-x-8">
-                                        <div
-                                            className="bg-background space-y-2 overflow-hidden rounded-[1.5rem] border p-2 shadow-xl dark:bg-white/5 dark:shadow-black dark:backdrop-blur-3xl">
-                                            <AppComponent />
-
-                                            <div className="bg-muted rounded-[1rem] p-4 pb-16 dark:bg-white/5"></div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] mix-blend-overlay [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] dark:opacity-5"></div>
                                 </div>
                             </AnimatedGroup>
                         </div>
                     </div>
                 </section>
         </main>
-    );
-}
-
-const AppComponent = () => {
-    return (
-        <div className="relative space-y-3 rounded-[1rem] bg-white/5 p-4">
-            {/* Placeholder for future demo video */}
-            <div className="flex items-center justify-center py-8">
-                <p className="text-muted-foreground text-sm">Demo video coming soon</p>
-            </div>
-        </div>
     );
 }

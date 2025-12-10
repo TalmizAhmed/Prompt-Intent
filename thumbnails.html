@@ -310,6 +310,106 @@
             line-height: 1.5;
         }
 
+        /* Social Share Image (1200x630) - Open Graph / Twitter */
+        .social-share {
+            width: 1200px;
+            height: 630px;
+            min-width: 1200px;
+            min-height: 630px;
+            max-width: 1200px;
+            max-height: 630px;
+            background: hsl(0, 0%, 100%);
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .social-share-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100%;
+            gap: 40px;
+            padding: 50px 60px;
+            align-items: center;
+        }
+
+        .social-share-left {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .social-share-logo {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 4px;
+        }
+
+        .social-share-brand {
+            font-size: 20px;
+            font-weight: 600;
+            color: hsl(0, 0%, 5%);
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+        }
+
+        .social-share-title {
+            font-size: 38px;
+            font-weight: 600;
+            color: hsl(0, 0%, 5%);
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+
+        .social-share-subtitle {
+            font-size: 15px;
+            color: hsl(0, 0%, 40%);
+            line-height: 1.5;
+        }
+
+        .social-share-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 4px;
+        }
+
+        .social-share-feature-tag {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            background: hsl(0, 0%, 100%);
+            border: 1px solid hsl(0, 0%, 92%);
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            color: hsl(0, 0%, 5%);
+        }
+
+        .social-share-feature-tag .icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        .social-share-right {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-share-screenshot {
+            width: 100%;
+            max-width: 420px;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid hsl(0, 0%, 92%);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        }
+
         /* Marquee Promo Tile (1400x560) */
         .marquee {
             width: 1400px;
@@ -409,6 +509,7 @@
         <a href="#screenshot-4">4. Before & After</a>
         <a href="#screenshot-5">5. All Features</a>
         <hr style="margin: 12px 0; border: none; border-top: 1px solid rgba(255,255,255,0.2);">
+        <a href="#social-share">🌐 Social Share (1200×630)</a>
         <a href="#marquee">📐 Marquee (1400×560)</a>
     </div>
 
@@ -575,6 +676,49 @@
                     <div class="feature-card-title">Lightning Fast</div>
                     <div class="feature-card-text">Instant question generation and real-time optimization</div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Share Image (1200x630) - Open Graph / Twitter -->
+    <div id="social-share" class="social-share">
+        <div class="social-share-content">
+            <div class="social-share-left">
+                <img src="src/assets/logo.svg" alt="Prompt Intent Logo" class="social-share-logo">
+                <div class="social-share-brand">Prompt Intent</div>
+                <h1 class="social-share-title">Intent-Driven Prompts,<br>Not Generic Rewrites</h1>
+                <p class="social-share-subtitle">Answer intelligent questions to capture your exact intent—all on-device, 100% private, completely offline.</p>
+                
+                <div class="social-share-features">
+                    <div class="social-share-feature-tag">
+                        <i data-lucide="infinity" class="icon"></i>
+                        <span>Unlimited Iterations</span>
+                    </div>
+                    <div class="social-share-feature-tag">
+                        <i data-lucide="chrome" class="icon"></i>
+                        <span>On-Device AI</span>
+                    </div>
+                    <div class="social-share-feature-tag">
+                        <i data-lucide="wifi-off" class="icon"></i>
+                        <span>Works Offline</span>
+                    </div>
+                    <div class="social-share-feature-tag">
+                        <i data-lucide="lock" class="icon"></i>
+                        <span>100% Private</span>
+                    </div>
+                    <div class="social-share-feature-tag">
+                        <i data-lucide="target" class="icon"></i>
+                        <span>Intent-Driven</span>
+                    </div>
+                    <div class="social-share-feature-tag">
+                        <i data-lucide="zap" class="icon"></i>
+                        <span>Lightning Fast</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social-share-right">
+                <img src="src/assets/modal-3qs.png" alt="Prompt Intent Interface" class="social-share-screenshot">
             </div>
         </div>
     </div>

@@ -11,13 +11,13 @@ const links = [
     },
     {
         title: 'Getting Started',
-        href: '#how-it-works',
+        href: '#getting-started',
     },
 ]
 
 export default function FooterSection() {
     return (
-        <footer className="py-8 md:py-12">
+        <footer className="pt-16 pb-8 md:pt-24 md:pb-12">
             <div className="mx-auto max-w-5xl px-6">
                 <a href="/" aria-label="go home" className="mx-auto block size-fit">
                     <Logo />
@@ -71,7 +71,7 @@ export default function FooterSection() {
                 </div>
                 <div className="text-center space-y-2">
                     <p className="text-muted-foreground text-sm">
-                        Made with <span className="text-xs">❤️</span> by Talmiz Ahmed
+                        Built by Talmiz Ahmed
                     </p>
                 </div>
             </div>
