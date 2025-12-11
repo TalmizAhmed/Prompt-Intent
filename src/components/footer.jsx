@@ -75,7 +75,15 @@ export default function FooterSection() {
                 </div>
                 <div className="text-center space-y-2">
                     <p className="text-muted-foreground text-sm">
-                        Built by Talmiz Ahmed
+                        Built by{' '}
+                        <a
+                            href="https://talmiz.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ color: '#18181b', textDecoration: 'underline', textDecorationColor: '#18181b' }}
+                        >
+                            Talmiz Ahmed
+                        </a>
                     </p>
                 </div>
             </div>
