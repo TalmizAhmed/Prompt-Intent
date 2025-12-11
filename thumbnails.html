@@ -495,6 +495,106 @@
             border: 1px solid hsl(0, 0%, 92%);
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
         }
+
+        /* YouTube Thumbnail (1280x720) */
+        .youtube-thumbnail {
+            width: 1280px;
+            height: 720px;
+            min-width: 1280px;
+            min-height: 720px;
+            max-width: 1280px;
+            max-height: 720px;
+            background: hsl(0, 0%, 100%);
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .youtube-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100%;
+            gap: 50px;
+            padding: 60px 70px;
+            align-items: center;
+        }
+
+        .youtube-left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .youtube-logo {
+            width: 56px;
+            height: 56px;
+            margin-bottom: 8px;
+        }
+
+        .youtube-brand {
+            font-size: 24px;
+            font-weight: 600;
+            color: hsl(0, 0%, 5%);
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+        }
+
+        .youtube-title {
+            font-size: 48px;
+            font-weight: 700;
+            color: hsl(0, 0%, 5%);
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+
+        .youtube-subtitle {
+            font-size: 18px;
+            color: hsl(0, 0%, 40%);
+            line-height: 1.5;
+        }
+
+        .youtube-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 8px;
+        }
+
+        .youtube-feature-tag {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            background: hsl(0, 0%, 100%);
+            border: 1px solid hsl(0, 0%, 92%);
+            border-radius: 24px;
+            font-size: 15px;
+            font-weight: 600;
+            color: hsl(0, 0%, 5%);
+        }
+
+        .youtube-feature-tag .icon {
+            width: 18px;
+            height: 18px;
+        }
+
+        .youtube-right {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .youtube-screenshot {
+            width: 100%;
+            max-width: 480px;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid hsl(0, 0%, 92%);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        }
     </style>
 </head>
 <body>
@@ -511,6 +611,7 @@
         <hr style="margin: 12px 0; border: none; border-top: 1px solid rgba(255,255,255,0.2);">
         <a href="#social-share">🌐 Social Share (1200×630)</a>
         <a href="#marquee">📐 Marquee (1400×560)</a>
+        <a href="#youtube-thumbnail">📺 YouTube (1280×720)</a>
     </div>
 
     <!-- Small Promo Tile (440x280) -->
@@ -761,6 +862,41 @@
             
             <div class="marquee-right">
                 <img src="src/assets/modal-3qs.png" alt="Prompt Intent Interface" class="marquee-screenshot">
+            </div>
+        </div>
+    </div>
+
+    <!-- YouTube Thumbnail (1280x720) -->
+    <div id="youtube-thumbnail" class="youtube-thumbnail">
+        <div class="youtube-content">
+            <div class="youtube-left">
+                <img src="src/assets/logo.svg" alt="Prompt Intent Logo" class="youtube-logo">
+                <div class="youtube-brand">Prompt Intent</div>
+                <h1 class="youtube-title">Perfect Your AI Prompts<br>Through Smart Questions</h1>
+                <p class="youtube-subtitle">Stop guessing. Answer intelligent questions to craft prompts that capture your exact intent—all on-device, 100% private, completely offline.</p>
+                
+                <div class="youtube-features">
+                    <div class="youtube-feature-tag">
+                        <i data-lucide="chrome" class="icon"></i>
+                        <span>On-Device AI</span>
+                    </div>
+                    <div class="youtube-feature-tag">
+                        <i data-lucide="wifi-off" class="icon"></i>
+                        <span>Works Offline</span>
+                    </div>
+                    <div class="youtube-feature-tag">
+                        <i data-lucide="lock" class="icon"></i>
+                        <span>100% Private</span>
+                    </div>
+                    <div class="youtube-feature-tag">
+                        <i data-lucide="target" class="icon"></i>
+                        <span>Intent-Driven</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="youtube-right">
+                <img src="src/assets/modal-3qs.png" alt="Prompt Intent Interface" class="youtube-screenshot">
             </div>
         </div>
     </div>
