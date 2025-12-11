@@ -13,6 +13,10 @@ const links = [
         title: 'Getting Started',
         href: '#getting-started',
     },
+    {
+        title: 'Privacy',
+        href: '/privacy.html',
+    },
 ]
 
 export default function FooterSection() {
